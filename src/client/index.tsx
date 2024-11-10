@@ -8,6 +8,7 @@ import { Patients } from "./routes/patients";
 
 import './index.scss';
 import { Layout } from "./layout";
+import { AddPatient } from "./routes/add-patient";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/patients",
         element: <Patients />,
+      },
+      {
+        path: "/add-patient",
+        element: <AddPatient />,
       },
     ],
   },
